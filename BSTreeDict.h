@@ -23,7 +23,7 @@ class BSTreeDict: public Dict<V> {
 		    }
 		    friend std::ostream& operator<<(std::ostream &out, const BSTreeDict<V> &bs){
 			    if(bs.tree->size() > 0)
-			    	out << bs.tree[0] << std::endl;
+			    	out << *(bs.tree) << std::endl;
 			    return out;
 		    }
 
